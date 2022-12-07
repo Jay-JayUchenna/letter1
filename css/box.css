@@ -1,0 +1,55 @@
+
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #475569;
+    background-image:  radial-gradient(whitesmoke,#475569);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,nav,main,footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header,footer {
+    position: sticky;
+    background-color: #1e291e;
+    color: whitesmoke;
+}
+
+header {
+    top: 0%;
+} 
+
+nav {
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid black;
+    min-width: 100vw;
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer {
+    bottom: 0%;
+}
+
+/*======small====*/
+@media  screen and (min-width: 576px) {
+    body {
+        background-color: grey;
+        background-image: radial-gradient(whitesmoke,grey);
+    }
+}
+nav{
+    display: none;
+}
+
